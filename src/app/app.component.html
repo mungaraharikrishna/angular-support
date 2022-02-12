@@ -1,14 +1,14 @@
 <form [formGroup]="myForm">
   <div class="from-group">
     <label class="from-label"> Client Owner </label>
-    <mat-form-field appearance="outline" (click)="openModal(popup)">
+    <mat-form-field appearance="outline" (click)="openModal(searchPopup)">
       <input matInput formControlName="clientOwner">
       <mat-icon matSuffix>search</mat-icon>
     </mat-form-field>
   </div>
 </form>
 
-<ng-template #popup>
+<ng-template #searchPopup>
   <div class="modal-container p-3">
     <div class="modal-header p-0">
       <h4 class="modal-title pull-left font_weight_bold">Registration Company Search</h4>
